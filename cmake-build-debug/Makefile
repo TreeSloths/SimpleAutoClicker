@@ -114,17 +114,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named autoclicker_project
+# Target rules for targets named SimpleAutoclicker
 
 # Build rule for target.
-autoclicker_project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) autoclicker_project
-.PHONY : autoclicker_project
+SimpleAutoclicker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) SimpleAutoclicker
+.PHONY : SimpleAutoclicker
 
 # fast build rule for target.
-autoclicker_project\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\autoclicker_project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\autoclicker_project.dir\build
-.PHONY : autoclicker_project\fast
+SimpleAutoclicker\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SimpleAutoclicker.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SimpleAutoclicker.dir\build
+.PHONY : SimpleAutoclicker\fast
 
 main.obj: main.cpp.obj
 
@@ -132,7 +132,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\autoclicker_project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\autoclicker_project.dir\main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SimpleAutoclicker.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SimpleAutoclicker.dir\main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -141,7 +141,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\autoclicker_project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\autoclicker_project.dir\main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SimpleAutoclicker.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SimpleAutoclicker.dir\main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\autoclicker_project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\autoclicker_project.dir\main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SimpleAutoclicker.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SimpleAutoclicker.dir\main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... autoclicker_project
+	@echo ... SimpleAutoclicker
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

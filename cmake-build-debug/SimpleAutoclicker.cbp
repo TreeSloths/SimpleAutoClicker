@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="autoclicker_project"/>
+		<Option title="SimpleAutoclicker"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="msvc8"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -17,8 +17,8 @@
 					<DistClean command="nmake /NOLOGO /f C:\Users\Adam\Documents\GitHub\SimpleAutoclicker\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="autoclicker_project">
-				<Option output="C:/Users/Adam/Documents/GitHub/SimpleAutoclicker/cmake-build-debug/autoclicker_project.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="SimpleAutoclicker">
+				<Option output="C:/Users/Adam/Documents/GitHub/SimpleAutoclicker/cmake-build-debug/SimpleAutoclicker.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Adam/Documents/GitHub/SimpleAutoclicker/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -33,14 +33,14 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Adam\Documents\GitHub\SimpleAutoclicker\cmake-build-debug\Makefile VERBOSE=1 autoclicker_project"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Adam\Documents\GitHub\SimpleAutoclicker\cmake-build-debug\Makefile VERBOSE=1 SimpleAutoclicker"/>
 					<CompileFile command="nmake /NOLOGO /f C:\Users\Adam\Documents\GitHub\SimpleAutoclicker\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="nmake /NOLOGO /f C:\Users\Adam\Documents\GitHub\SimpleAutoclicker\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 					<DistClean command="nmake /NOLOGO /f C:\Users\Adam\Documents\GitHub\SimpleAutoclicker\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="autoclicker_project/fast">
-				<Option output="C:/Users/Adam/Documents/GitHub/SimpleAutoclicker/cmake-build-debug/autoclicker_project.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="SimpleAutoclicker/fast">
+				<Option output="C:/Users/Adam/Documents/GitHub/SimpleAutoclicker/cmake-build-debug/SimpleAutoclicker.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Adam/Documents/GitHub/SimpleAutoclicker/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -55,7 +55,7 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Adam\Documents\GitHub\SimpleAutoclicker\cmake-build-debug\Makefile VERBOSE=1 autoclicker_project/fast"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Adam\Documents\GitHub\SimpleAutoclicker\cmake-build-debug\Makefile VERBOSE=1 SimpleAutoclicker/fast"/>
 					<CompileFile command="nmake /NOLOGO /f C:\Users\Adam\Documents\GitHub\SimpleAutoclicker\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="nmake /NOLOGO /f C:\Users\Adam\Documents\GitHub\SimpleAutoclicker\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 					<DistClean command="nmake /NOLOGO /f C:\Users\Adam\Documents\GitHub\SimpleAutoclicker\cmake-build-debug\Makefile VERBOSE=1 clean"/>
@@ -83,7 +83,7 @@
 			</Target>
 		</Build>
 		<Unit filename="C:/Users/Adam/Documents/GitHub/SimpleAutoclicker/main.cpp">
-			<Option target="autoclicker_project"/>
+			<Option target="SimpleAutoclicker"/>
 		</Unit>
 		<Unit filename="C:/Users/Adam/Documents/GitHub/SimpleAutoclicker/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
