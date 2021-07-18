@@ -30,8 +30,4 @@ int main() {
     inputs[2].type = INPUT_MOUSE;
     inputs[2].mi.dwFlags = MOUSEEVENTF_LEFTUP;
     SendInput(3, inputs, sizeof(INPUT));
-
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
-    // SendInput()
 }
