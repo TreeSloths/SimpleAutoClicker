@@ -1,33 +1,46 @@
-#include <iostream>
 #include <windows.h>
+#include <iostream>
 
-/* TRASH CODE FOR NOW UNTIL MAYBE FUTURE USE
-void mouseClick() {
-    inputs[0].type = INPUT_MOUSE;
-    // X coordinate
-    inputs[0].mi.dy = ;
-    // Y coordinate
-    inputs[0].mi.dy;
-}*/
 
-INPUT inputs[2] = {0};
-int main() {
+int StartKey = VK_F3;
+int StopKey = VK_END;
 
-    typedef struct tagMOUSEINPUT {
-        LONG      dx;
-        LONG      dy;
-        DWORD     dwFlags;
-    };
-
-    /* THIS IS IF YOU WANT THE MOUSE TO CHANGE TO A SPECIFIC COORDINATE.
-    inputs[0].type = INPUT_MOUSE;
-    inputs[0].mi.dx;
-    inputs[0].mi.dy;
-    */
+INPUT inputs[3] = {0};
+void MouseClick() {
     inputs[1].type = INPUT_MOUSE;
     inputs[1].mi.dwFlags = MOUSEEVENTF_LEFTDOWN;
 
     inputs[2].type = INPUT_MOUSE;
     inputs[2].mi.dwFlags = MOUSEEVENTF_LEFTUP;
+
     SendInput(3, inputs, sizeof(INPUT));
 }
+
+
+int main() {
+    int MilliSeconds;
+    const int MaximumSeconds = 50;
+    std::string string1 = "För att använda programmet så ska du ange millisekunder, sedan skall du peka på vart du vill autoclicka sedan trycka på F3 knappen i tangetbordet. För att stoppa programmet ska du trycka på END knappen på tangetbordet."
+                       "För att minska användningen av datorns CPU och unvika överhettning så måste du sätta paustid mellan klickarna i millisekunder, minimum 50ms"
+                       "Däremot, desto mindre millisekunder, desto snabbare klicks. Du måste dock vara försiktig med hastigheten för att undvika bli detectad och bannad, så testa allt från en halvsekund (500ms) till mindre (50ms till 400ms)";
+
+    std::cout << string1 << std::endl;
+    std::cout << "" << std::endl;
+    std::cout << "Ange millisekunder: ";
+    std::cin >> MilliSeconds;
+    if(MilliSeconds < MaximumSeconds) {
+        std::cout << "Minimum millisekunder var 50ms, du kan inte gå ner mer än detta." << std::endl;
+    } else {
+        while(!(GetAsyncKeyState(StopKey))) {
+            if(GetAsyncKeyState(StartKey)) {
+                while(!(GetAsyncKeyState(StopKey))) {
+                    MouseClick();
+                    Sleep(MilliSeconds);
+                }
+            }
+        }
+    }
+}
+
+
+
