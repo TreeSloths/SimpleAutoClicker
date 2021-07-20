@@ -29,10 +29,11 @@ int main() {
     std::cout << "Så testa allt från en halvsekund (500ms) till mindre (50ms till 400ms)" << std::endl;
 
     std::cout << "" << std::endl;
-    std::cout << "Ange millisekunder: ";
+ assign: std::cout << "Ange millisekunder: ";
     std::cin >> milliSecond;
     if(milliSecond < minimumSeconds) {
-        std::cout << "Minimum millisekunder var 50ms, du kan inte gå ner mer än detta." << std::endl;
+        std::cout << "Minimum millisekunder var 50ms, du kan inte gå ner mer än detta. Försök igen." << std::endl;
+        goto assign;
     } else {
         while(!(GetAsyncKeyState(stopKey))) {
             if(GetAsyncKeyState(startKey)) {
