@@ -19,11 +19,9 @@ void mouseClick() {
 int main() {
     int milliSecond;
     const int minimumSeconds = 50;
-    std::cout << "För att använda programmet så ska du ange millisekunder, sedan skall du peka på vart du vill autoclicka sedan trycka på F3 knappen i tangetbordet. " << std::endl;
+    std::cout << "För att använda programmet så skall du ange millisekunder, sedan skall du peka på vart du vill autoclicka sedan trycka på F3 knappen i tangetbordet. " << std::endl;
     std::cout << "" << std::endl;
     std::cout << "För att pausa programmet ska du trycka på END knappen på tangetbordet." << std::endl;
-    std::cout << "" << std::endl;
-    std::cout << "För att starta om ska du trycka på F4." << std::endl;
     std::cout << "" << std::endl;
     std::cout << "För att minska användningen av datorns CPU och unvika överhettning så måste du sätta paustid mellan klickarna i millisekunder, minimum 50ms" << std::endl;
     std::cout << "" << std::endl;
@@ -32,7 +30,7 @@ int main() {
     std::cout << "Så testa allt från en halvsekund (500ms) till mindre (50ms till 400ms)" << std::endl;
 
     std::cout << "" << std::endl;
- assign: std::cout << "Ange millisekunder: ";
+    std::cout << "Ange millisekunder: ";
     std::cin >> milliSecond;
     if(milliSecond < minimumSeconds) {
         std::cout << "Minimum millisekunder var 50ms, du kan inte gå ner mer än detta. Försök igen." << std::endl;
