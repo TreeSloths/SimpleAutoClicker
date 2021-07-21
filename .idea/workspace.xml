@@ -11,13 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f3ed6fa-893e-447f-9d97-20edec481e71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SimpleAutoclicker.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SimpleAutoclicker.dir/vc140.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SimpleAutoclicker.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SimpleAutoclicker.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SimpleAutoclicker.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SimpleAutoclicker.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-    </list>
+    <list default="true" id="4f3ed6fa-893e-447f-9d97-20edec481e71" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +73,7 @@
       <workItem from="1626687355077" duration="2108000" />
       <workItem from="1626818131284" duration="1373000" />
       <workItem from="1626874350864" duration="115000" />
+      <workItem from="1626874510881" duration="692000" />
     </task>
     <servers />
   </component>

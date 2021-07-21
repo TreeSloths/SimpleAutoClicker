@@ -34,7 +34,6 @@ int main() {
     std::cin >> milliSecond;
     if(milliSecond < minimumSeconds) {
         std::cout << "Minimum millisekunder var 50ms, du kan inte gå ner mer än detta. Försök igen." << std::endl;
-        goto assign;
     } else {
       while(!(GetAsyncKeyState(stopKey))) {
           execution: if(GetAsyncKeyState(startKey)) {
